@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>portfolio</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="lib/setup.css" />
+		<link rel="stylesheet" href="lib/font.css" />
+		<script src="./lib/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+	</head>
+	<body>
+		<div class="custom-cursor"></div>
+		<!-- <div class="main_animation">
+			<div class="rotate_text">
+				<svg xmlns="http://www.w3.org/2000/svg" width="428" height="428" fill="none">
+					<path
+						fill="#fff"
+						d="m277 77-1 2-9 5-1-3 6-3-16-6 1-3 16 6-3-6 3-1 4 9ZM306 95l-1 2-10 2-1-3 7-1-14-10 1-2 15 10-2-7 3-1 2 10ZM311 107l2 4c2 2 4 1 4 0l9-9 3 3-9 9c-1 1-5 4-9 0-2-2-3-5-3-7h3ZM336 112l2 3-8 5c-3 3-4 6-2 9 3 4 6 4 10 2l7-6 2 3-7 5c-5 4-10 4-14-2-4-5-2-10 2-13l8-6ZM353 137l1 3-7 17 12-6 2 3-17 8-2-3 8-16-13 5-1-3 17-8ZM358 176l3 10-3 1c-5 0-8-3-10-8-1-7 2-11 7-13 6-1 11 2 13 8 1 5-1 9-5 11v-3c2-2 3-4 2-7-2-5-5-6-9-5s-6 3-5 8c1 3 2 6 6 6l-2-7 3-1ZM363 219h-2l-8-7 3-2 5 4-1-17h3l1 17 4-5 3 2-8 8ZM369 244c-1 4-5 7-11 5-6-1-8-5-8-8l3-13 18 3-2 13Zm-14-12-2 8c0 3 2 5 6 6s7-1 7-3l1-9-12-2ZM346 264c-1 4 0 7 4 9 4 1 7 0 9-4 2-5 0-8-4-9-4-2-7-1-9 4Zm10-7c6 2 8 7 6 13s-8 8-13 6-8-7-5-13c2-6 7-8 12-6ZM353 288l-2 3-18 3 12 7-2 3-16-10 2-3 18-2-12-8 2-3 16 10ZM323 314l-6 8-3-2c-3-5-1-9 2-13 5-5 10-4 14-1 4 4 5 10 1 14-4 5-8 6-12 3l2-2c3 1 5 0 7-3 4-3 3-6 0-9s-6-3-10 0c-2 3-3 5-1 8l4-5 2 2ZM291 341l-1-1 1-11 3 1-1 7 14-10 2 2-14 10 6 1v3l-10-2ZM281 356l-11-7-3 13-3 1-7-17 3-1 5 12 2-11 4-1 8 6-5-12 3-1 8 17-4 1ZM253 366l-3 1-5-18 4-1 4 18ZM239 369l-3 1-13-13 1 14h-3l-2-18 3-1 13 13-1-14h3l2 18ZM187 360v-2l8-6 2 2-5 4 17 2v3l-18-2 5 6-3 2-6-9ZM154 350l1-2 9-4 1 3-6 3 17 5-1 3-17-6 3 6-3 2-4-10ZM140 332l5 3-5 19-3-2 4-16-7 5-2 8-3-2 4-16v-1l-13 11-4-2 16-13 5 3-1 6 4-3ZM109 332l-13-12 3-3 10 11 3-4-10-10 2-2 11 10 3-3-11-11 2-2 13 13-13 13ZM83 302c-2-3-1-6 1-7l4-2 2-4c3-2 6-1 8 2l7 10-15 11-7-10Zm18-2-5-7c-1-2-3-2-4-1s-1 2 1 5l4 6 4-3Zm-7 4-4-5c-1-2-2-3-4-2v4l4 6 4-3ZM73 263l2-1 9 4-1 3-6-3 7 16-3 2-7-16-2 6-3-1 4-10ZM58 242c-1-4 1-6 5-6 3-1 6 0 6 3l2 10 8-2v4l-7 1-11 3-3-13Zm10 8-1-8c-1-3-2-4-4-3l-2 4 2 8 5-1ZM72 217c0-5-3-7-7-6-4 0-7 2-7 7 0 4 3 6 7 6s7-2 7-7Zm-7 11c-5 0-10-4-10-10 0-7 4-11 10-11 5 0 10 4 10 10 0 7-4 11-10 11ZM58 184c1-3 3-5 7-4l4 2h9l-1 3c-5-1-7 0-8 4l-1 7 7 1v3l-19-3 2-13Zm7 11 1-8c1-2 0-3-2-4-2 0-3 1-3 3l-1 8 5 1ZM68 152l2 1-2 7 15 5-1 3-15-5-3 7-2-1 6-17ZM71 143l9-15 3 1-7 13 4 2 7-12 3 2-7 12 7 4-2 3-17-10ZM104 122c3-3 3-7-1-9-3-3-6-3-9 1-3 3-3 7 1 9 3 3 6 3 9-1Zm-12 4c-4-3-5-9-1-14 5-5 10-5 15-2 4 4 5 9 1 14-5 6-10 5-15 2ZM106 97l2-2 10 12 12-9 2 2-14 12-12-15ZM127 81l3-2 10 16-2 1-11-15ZM155 84c4-2 5-5 3-9s-5-5-9-3c-4 1-5 5-4 9 2 3 5 5 10 3Zm-13-2c-2-5 0-11 6-13 6-3 11 0 13 4 2 5 1 11-5 14-6 2-11 0-14-5ZM192 65v2l-5 9-3-2 4-5-17 3-1-3 17-3-5-4 1-3 9 6ZM226 64v2l-7 8-2-3 5-5h-18v-3h18l-5-4 2-3 7 8Z"
+					/>
+				</svg>
+			</div>
+		</div> -->
+		<div class="hdbox"></div>
+		<header>
+			<div class="hd_fixed">
+				<div class="header_wrap">
+					<div class="logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="131" height="50" fill="none">
+							<path
+								fill="#FF3D00"
+								d="M24 10v30h-5v-3c-2 2-5 3-9 3-9 0-10-8-10-11 0-4 1-12 10-12 4 0 7 2 9 4V10h5ZM5 29c0 5 2 6 6 7 2 1 5 0 6-3l1-4-1-5c-1-2-4-3-6-3-4 0-6 3-6 8ZM50 10v30h-5v-3c-2 2-5 3-8 3-9 0-10-8-10-11 0-4 1-12 10-12 3 0 6 2 8 4V10h5ZM32 29c0 5 2 6 5 7s5 0 7-3l1-4-1-5c-1-2-4-3-7-3s-5 3-5 8ZM53 14h5v3c2-2 4-3 8-3h3l-1 4c-3-1-7 1-8 3l-2 4v11h-5V14ZM73 14h5v3c1-2 4-3 8-3 8 0 9 6 9 9v13h-5V23c0-3-2-4-4-5-4 0-8 2-8 5v13h-5V14ZM99 19h5v21h-5V19Zm-1-6c0-2 1-3 4-3 2 0 3 1 3 3 0 1-1 3-3 3-3 0-4-2-4-3ZM108 14h5v3c2-2 4-3 8-3 9 0 10 6 10 9v13h-5V23c0-3-2-4-5-5-4 0-8 2-8 5v13h-5V14Z"
+							/>
+						</svg>
+					</div>
+					<div class="hd_right">
+						<div class="date">
+							<p class="datep"></p>
+							<p class="datet"></p>
+						</div>
+						<div class="menuBtn pointer">
+							<span class="menuBtn_l1"></span>
+							<span class="menuBtn_l2"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="menuBg">
+			<div class="rotate_text">
+				<svg xmlns="http://www.w3.org/2000/svg" width="428" height="428" fill="none">
+					<path
+						fill="#fff"
+						d="m277 77-1 2-9 5-1-3 6-3-16-6 1-3 16 6-3-6 3-1 4 9ZM306 95l-1 2-10 2-1-3 7-1-14-10 1-2 15 10-2-7 3-1 2 10ZM311 107l2 4c2 2 4 1 4 0l9-9 3 3-9 9c-1 1-5 4-9 0-2-2-3-5-3-7h3ZM336 112l2 3-8 5c-3 3-4 6-2 9 3 4 6 4 10 2l7-6 2 3-7 5c-5 4-10 4-14-2-4-5-2-10 2-13l8-6ZM353 137l1 3-7 17 12-6 2 3-17 8-2-3 8-16-13 5-1-3 17-8ZM358 176l3 10-3 1c-5 0-8-3-10-8-1-7 2-11 7-13 6-1 11 2 13 8 1 5-1 9-5 11v-3c2-2 3-4 2-7-2-5-5-6-9-5s-6 3-5 8c1 3 2 6 6 6l-2-7 3-1ZM363 219h-2l-8-7 3-2 5 4-1-17h3l1 17 4-5 3 2-8 8ZM369 244c-1 4-5 7-11 5-6-1-8-5-8-8l3-13 18 3-2 13Zm-14-12-2 8c0 3 2 5 6 6s7-1 7-3l1-9-12-2ZM346 264c-1 4 0 7 4 9 4 1 7 0 9-4 2-5 0-8-4-9-4-2-7-1-9 4Zm10-7c6 2 8 7 6 13s-8 8-13 6-8-7-5-13c2-6 7-8 12-6ZM353 288l-2 3-18 3 12 7-2 3-16-10 2-3 18-2-12-8 2-3 16 10ZM323 314l-6 8-3-2c-3-5-1-9 2-13 5-5 10-4 14-1 4 4 5 10 1 14-4 5-8 6-12 3l2-2c3 1 5 0 7-3 4-3 3-6 0-9s-6-3-10 0c-2 3-3 5-1 8l4-5 2 2ZM291 341l-1-1 1-11 3 1-1 7 14-10 2 2-14 10 6 1v3l-10-2ZM281 356l-11-7-3 13-3 1-7-17 3-1 5 12 2-11 4-1 8 6-5-12 3-1 8 17-4 1ZM253 366l-3 1-5-18 4-1 4 18ZM239 369l-3 1-13-13 1 14h-3l-2-18 3-1 13 13-1-14h3l2 18ZM187 360v-2l8-6 2 2-5 4 17 2v3l-18-2 5 6-3 2-6-9ZM154 350l1-2 9-4 1 3-6 3 17 5-1 3-17-6 3 6-3 2-4-10ZM140 332l5 3-5 19-3-2 4-16-7 5-2 8-3-2 4-16v-1l-13 11-4-2 16-13 5 3-1 6 4-3ZM109 332l-13-12 3-3 10 11 3-4-10-10 2-2 11 10 3-3-11-11 2-2 13 13-13 13ZM83 302c-2-3-1-6 1-7l4-2 2-4c3-2 6-1 8 2l7 10-15 11-7-10Zm18-2-5-7c-1-2-3-2-4-1s-1 2 1 5l4 6 4-3Zm-7 4-4-5c-1-2-2-3-4-2v4l4 6 4-3ZM73 263l2-1 9 4-1 3-6-3 7 16-3 2-7-16-2 6-3-1 4-10ZM58 242c-1-4 1-6 5-6 3-1 6 0 6 3l2 10 8-2v4l-7 1-11 3-3-13Zm10 8-1-8c-1-3-2-4-4-3l-2 4 2 8 5-1ZM72 217c0-5-3-7-7-6-4 0-7 2-7 7 0 4 3 6 7 6s7-2 7-7Zm-7 11c-5 0-10-4-10-10 0-7 4-11 10-11 5 0 10 4 10 10 0 7-4 11-10 11ZM58 184c1-3 3-5 7-4l4 2h9l-1 3c-5-1-7 0-8 4l-1 7 7 1v3l-19-3 2-13Zm7 11 1-8c1-2 0-3-2-4-2 0-3 1-3 3l-1 8 5 1ZM68 152l2 1-2 7 15 5-1 3-15-5-3 7-2-1 6-17ZM71 143l9-15 3 1-7 13 4 2 7-12 3 2-7 12 7 4-2 3-17-10ZM104 122c3-3 3-7-1-9-3-3-6-3-9 1-3 3-3 7 1 9 3 3 6 3 9-1Zm-12 4c-4-3-5-9-1-14 5-5 10-5 15-2 4 4 5 9 1 14-5 6-10 5-15 2ZM106 97l2-2 10 12 12-9 2 2-14 12-12-15ZM127 81l3-2 10 16-2 1-11-15ZM155 84c4-2 5-5 3-9s-5-5-9-3c-4 1-5 5-4 9 2 3 5 5 10 3Zm-13-2c-2-5 0-11 6-13 6-3 11 0 13 4 2 5 1 11-5 14-6 2-11 0-14-5ZM192 65v2l-5 9-3-2 4-5-17 3-1-3 17-3-5-4 1-3 9 6ZM226 64v2l-7 8-2-3 5-5h-18v-3h18l-5-4 2-3 7 8Z"
+					/>
+				</svg>
+			</div>
+			<div class="menu_header">
+				<div class="menu_header_wrap">
+					<div class="logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="131" height="50" fill="none">
+							<path
+								fill="#FF3D00"
+								d="M24 10v30h-5v-3c-2 2-5 3-9 3-9 0-10-8-10-11 0-4 1-12 10-12 4 0 7 2 9 4V10h5ZM5 29c0 5 2 6 6 7 2 1 5 0 6-3l1-4-1-5c-1-2-4-3-6-3-4 0-6 3-6 8ZM50 10v30h-5v-3c-2 2-5 3-8 3-9 0-10-8-10-11 0-4 1-12 10-12 3 0 6 2 8 4V10h5ZM32 29c0 5 2 6 5 7s5 0 7-3l1-4-1-5c-1-2-4-3-7-3s-5 3-5 8ZM53 14h5v3c2-2 4-3 8-3h3l-1 4c-3-1-7 1-8 3l-2 4v11h-5V14ZM73 14h5v3c1-2 4-3 8-3 8 0 9 6 9 9v13h-5V23c0-3-2-4-4-5-4 0-8 2-8 5v13h-5V14ZM99 19h5v21h-5V19Zm-1-6c0-2 1-3 4-3 2 0 3 1 3 3 0 1-1 3-3 3-3 0-4-2-4-3ZM108 14h5v3c2-2 4-3 8-3 9 0 10 6 10 9v13h-5V23c0-3-2-4-5-5-4 0-8 2-8 5v13h-5V14Z"
+							/>
+						</svg>
+					</div>
+					<div class="hd_right">
+						<div class="date">
+							<p class="datep"></p>
+							<p class="datet"></p>
+						</div>
+						<div class="menuBtn pointer"><span></span><span></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu_header_contentsBox">
+				<ul>
+					<li class="menu_color">
+						<a href="#section1" class="menuMove">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="53" height="42" fill="none">
+									<path fill="#0038ff" d="M53 18v5L35 41l-4-5 11-11H0v-8h42L31 6l4-5 18 17Z" />
+								</svg>
+							</span>
+							<p>ABOUT</p>
+						</a>
+					</li>
+					<li class="menu_color">
+						<a href="#section2" class="menuMove">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="53" height="42" fill="none">
+									<path fill="#ffc700" d="M53 18v5L35 41l-4-5 11-11H0v-8h42L31 6l4-5 18 17Z" />
+								</svg>
+							</span>
+							<p>SKILLS</p>
+						</a>
+					</li>
+					<li class="menu_color">
+						<a href="#section3" class="menuMove">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="53" height="42" fill="none">
+									<path fill="#ffffff" d="M53 18v5L35 41l-4-5 11-11H0v-8h42L31 6l4-5 18 17Z" />
+								</svg>
+							</span>
+							<p>PORTFOLIO</p>
+						</a>
+					</li>
+					<li class="menu_color">
+						<a href="#section4" class="menuMove">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="53" height="42" fill="none">
+									<path fill="#FF3D00" d="M53 18v5L35 41l-4-5 11-11H0v-8h42L31 6l4-5 18 17Z" />
+								</svg>
+							</span>
+							<p>CONTACT</p>
+						</a>
+					</li>
+				</ul>
+				<div class="contactBox">
+					<div class="button box">
+						<div class="button_wrap email button pointer">
+							<img src="img/email.svg" alt="" />
+							<p>Contact for Email?</p>
+							<div>
+								wjdehdals145<br />
+								@naver.com
+							</div>
+							<a class="copyText">wjdehdals145@naver.com</a>
+						</div>
+					</div>
+					<div class="number box">
+						<div class="button_wrap number call button pointer">
+							<img src="img/number.svg" alt="" />
+							<p>Mobile Number</p>
+							<div>+82 10 8229 6642</div>
+							<a class="copyText">01082296642</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="main1 parallax__item" data-bgcolor="#000">
+			<div class="img_box">
+				<div class="spaceman"><img src="img/spaceman.png" alt="" /></div>
+				<div class="rotate_text">
+					<svg xmlns="http://www.w3.org/2000/svg" width="428" height="428" fill="none">
+						<path
+							fill="#fff"
+							d="m277 77-1 2-9 5-1-3 6-3-16-6 1-3 16 6-3-6 3-1 4 9ZM306 95l-1 2-10 2-1-3 7-1-14-10 1-2 15 10-2-7 3-1 2 10ZM311 107l2 4c2 2 4 1 4 0l9-9 3 3-9 9c-1 1-5 4-9 0-2-2-3-5-3-7h3ZM336 112l2 3-8 5c-3 3-4 6-2 9 3 4 6 4 10 2l7-6 2 3-7 5c-5 4-10 4-14-2-4-5-2-10 2-13l8-6ZM353 137l1 3-7 17 12-6 2 3-17 8-2-3 8-16-13 5-1-3 17-8ZM358 176l3 10-3 1c-5 0-8-3-10-8-1-7 2-11 7-13 6-1 11 2 13 8 1 5-1 9-5 11v-3c2-2 3-4 2-7-2-5-5-6-9-5s-6 3-5 8c1 3 2 6 6 6l-2-7 3-1ZM363 219h-2l-8-7 3-2 5 4-1-17h3l1 17 4-5 3 2-8 8ZM369 244c-1 4-5 7-11 5-6-1-8-5-8-8l3-13 18 3-2 13Zm-14-12-2 8c0 3 2 5 6 6s7-1 7-3l1-9-12-2ZM346 264c-1 4 0 7 4 9 4 1 7 0 9-4 2-5 0-8-4-9-4-2-7-1-9 4Zm10-7c6 2 8 7 6 13s-8 8-13 6-8-7-5-13c2-6 7-8 12-6ZM353 288l-2 3-18 3 12 7-2 3-16-10 2-3 18-2-12-8 2-3 16 10ZM323 314l-6 8-3-2c-3-5-1-9 2-13 5-5 10-4 14-1 4 4 5 10 1 14-4 5-8 6-12 3l2-2c3 1 5 0 7-3 4-3 3-6 0-9s-6-3-10 0c-2 3-3 5-1 8l4-5 2 2ZM291 341l-1-1 1-11 3 1-1 7 14-10 2 2-14 10 6 1v3l-10-2ZM281 356l-11-7-3 13-3 1-7-17 3-1 5 12 2-11 4-1 8 6-5-12 3-1 8 17-4 1ZM253 366l-3 1-5-18 4-1 4 18ZM239 369l-3 1-13-13 1 14h-3l-2-18 3-1 13 13-1-14h3l2 18ZM187 360v-2l8-6 2 2-5 4 17 2v3l-18-2 5 6-3 2-6-9ZM154 350l1-2 9-4 1 3-6 3 17 5-1 3-17-6 3 6-3 2-4-10ZM140 332l5 3-5 19-3-2 4-16-7 5-2 8-3-2 4-16v-1l-13 11-4-2 16-13 5 3-1 6 4-3ZM109 332l-13-12 3-3 10 11 3-4-10-10 2-2 11 10 3-3-11-11 2-2 13 13-13 13ZM83 302c-2-3-1-6 1-7l4-2 2-4c3-2 6-1 8 2l7 10-15 11-7-10Zm18-2-5-7c-1-2-3-2-4-1s-1 2 1 5l4 6 4-3Zm-7 4-4-5c-1-2-2-3-4-2v4l4 6 4-3ZM73 263l2-1 9 4-1 3-6-3 7 16-3 2-7-16-2 6-3-1 4-10ZM58 242c-1-4 1-6 5-6 3-1 6 0 6 3l2 10 8-2v4l-7 1-11 3-3-13Zm10 8-1-8c-1-3-2-4-4-3l-2 4 2 8 5-1ZM72 217c0-5-3-7-7-6-4 0-7 2-7 7 0 4 3 6 7 6s7-2 7-7Zm-7 11c-5 0-10-4-10-10 0-7 4-11 10-11 5 0 10 4 10 10 0 7-4 11-10 11ZM58 184c1-3 3-5 7-4l4 2h9l-1 3c-5-1-7 0-8 4l-1 7 7 1v3l-19-3 2-13Zm7 11 1-8c1-2 0-3-2-4-2 0-3 1-3 3l-1 8 5 1ZM68 152l2 1-2 7 15 5-1 3-15-5-3 7-2-1 6-17ZM71 143l9-15 3 1-7 13 4 2 7-12 3 2-7 12 7 4-2 3-17-10ZM104 122c3-3 3-7-1-9-3-3-6-3-9 1-3 3-3 7 1 9 3 3 6 3 9-1Zm-12 4c-4-3-5-9-1-14 5-5 10-5 15-2 4 4 5 9 1 14-5 6-10 5-15 2ZM106 97l2-2 10 12 12-9 2 2-14 12-12-15ZM127 81l3-2 10 16-2 1-11-15ZM155 84c4-2 5-5 3-9s-5-5-9-3c-4 1-5 5-4 9 2 3 5 5 10 3Zm-13-2c-2-5 0-11 6-13 6-3 11 0 13 4 2 5 1 11-5 14-6 2-11 0-14-5ZM192 65v2l-5 9-3-2 4-5-17 3-1-3 17-3-5-4 1-3 9 6ZM226 64v2l-7 8-2-3 5-5h-18v-3h18l-5-4 2-3 7 8Z"
+						/>
+					</svg>
+				</div>
+				<div class="spaceship"><img src="img/spaceship.png" alt="" /></div>
+			</div>
+			<div class="main1_wrap">
+				<div class="slider1 swiper-container" id="parallax__nav">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide main_contact">
+							<a href="#section4" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#ff3d00" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>CONTACT</p>
+								</div>
+								<div class="text">
+									사용하기 쉬운 UI, <br />
+									기억에 남는 UX,<br />
+									원활한 의사사통과 협업.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_about">
+							<a href="#section1" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#0038ff" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>ABOUT</p>
+								</div>
+								<div class="text">
+									안 되면 될 때까지 DIGGING!<br />
+									[제 것]으로 만드는<br />
+									성장 중인, 신입 웹퍼블리셔.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_skills">
+							<a href="#section2" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#ffc700" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>SKILLS</p>
+								</div>
+								<div class="text">
+									퍼블리싱과 UIUX 만이 아니라<br />
+									사람들과의 협업과 <br />
+									소통에 중점을 둔 기술 스택.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_portfolio">
+							<a href="#section3" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#fff" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>PORTFOLIO</p>
+								</div>
+								<div class="text">
+									모바일 · 반응형 · 적응형,<br />
+									그리고 인터랙티브 웹까지!<br />
+									다양한 포트폴리오.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_contact">
+							<a href="#section4" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#ff3d00" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>CONTACT</p>
+								</div>
+								<div class="text">
+									사용하기 쉬운 UI, <br />
+									기억에 남는 UX,<br />
+									원활한 의사사통과 협업.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_about">
+							<a href="#section1" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#0038ff" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>ABOUT</p>
+								</div>
+								<div class="text">
+									안 되면 될 때까지 DIGGING!<br />
+									[제 것]으로 만드는<br />
+									성장 중인, 신입 웹퍼블리셔.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_skills">
+							<a href="#section2" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#ffc700" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>SKILLS</p>
+								</div>
+								<div class="text">
+									퍼블리싱과 UIUX 만이 아니라<br />
+									사람들과의 협업과 <br />
+									소통에 중점을 둔 기술 스택.
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide main_portfolio">
+							<a href="#section3" class="text_wrap menuMove">
+								<div class="title">
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="none">
+											<path fill="#fff" d="M26 9v2l-9 9-2-3 5-5H0V8h20l-5-5 2-3 9 9Z" />
+										</svg>
+									</span>
+									<p>PORTFOLIO</p>
+								</div>
+								<div class="text">
+									모바일 · 반응형 · 적응형,<br />
+									그리고 인터랙티브 웹까지!<br />
+									다양한 포트폴리오.
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<main class="main2 parallax__item" data-bgcolor="#000">
+			<div class="main2_wrap">
+				<div class="textBox"></div>
+				<div class="textr" aria-hidden="true">
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+				</div>
+				<div class="textl" aria-hidden="true">
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+				</div>
+			</div>
+			<div class="text2box">
+				<div class="textr2" aria-hidden="true">
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+					<div>JEONG→DONG→MIN→</div>
+				</div>
+				<div class="textl2" aria-hidden="true">
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+					<div>←WEB←PORTFOLIO</div>
+				</div>
+			</div>
+		</main>
+		<main class="about parallax__item" data-bgcolor="#0038ff" id="section1">
+			<div class="about_wrap">
+				<div class="about_title">
+					<div class="title">ABOUT</div>
+					<div class="text">
+						안 되면 될 때까지 DIGGING!<br />
+						[제 것]으로 만드는<br />
+						성장 중인, 신입 웹퍼블리셔.
+					</div>
+				</div>
+				<div class="kakao">
+					<div class="alineText">MIN ABOUT JEONG DONG MIN ABOUT JEONG DONG MIN</div>
+					<div class="kakao_wrap">
+						<div class="kakao_hd1">
+							<div class="time"></div>
+							<div class="right">
+								<div class="icon"><img src="img/kakaohd1_1.svg" alt="" /></div>
+								<div class="icon"><img src="img/kakaohd1_2.svg" alt="" /></div>
+								<div class="icon"><img src="img/kakaohd1_3.svg" alt="" /></div>
+							</div>
+						</div>
+						<div class="kakao_hd2">
+							<div class="left"></div>
+							<div class="right">
+								<div class="icon"><img src="img/kakaohd2_1.svg" alt="" /></div>
+								<div class="icon"><img src="img/kakaohd2_2.svg" alt="" /></div>
+								<div class="icon"><img src="img/kakaohd2_3.svg" alt="" /></div>
+								<div class="icon"><img src="img/kakaohd2_4.svg" alt="" /></div>
+							</div>
+						</div>
+						<ul class="hash">
+							<div class="hash2">
+								<li class="kakao_aos"><div>UI/UX</div></li>
+								<li class="kakao_aos"><div>SEMANTIC</div></li>
+							</div>
+							<li class="kakao_aos"><div>INTERACIVE</div></li>
+							<li class="kakao_aos"><div>WEB PUBLISHING</div></li>
+							<li class="kakao_aos"><div>RESPONSIVE</div></li>
+						</ul>
+						<div class="img">
+							<svg width="135" height="135" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<path
+										id="shapeSquircle"
+										d="M50 25C50 43.4095 43.4095 50 25 50C6.59051 50 0 43.4095 0 25C0 6.59051 6.59051 0 25 0C43.4095 0 50 6.59051 50 25Z"
+									></path>
+									<clipPath id="clipSquircle">
+										<use xlink:href="#shapeSquircle" />
+									</clipPath>
+								</defs>
+								<image
+									width="100%"
+									height="100%"
+									preserveAspectRatio="xMidYMid slice"
+									clip-path="url(#clipSquircle)"
+									xlink:href="img/profile.png"
+								/>
+							</svg>
+						</div>
+						<div class="name">정동민<img src="img/pencil.svg" alt="" /></div>
+						<div class="line"></div>
+						<div class="more">
+							<div class="call button pointer">
+								<img src="img/kakao_phone.svg" alt="" />
+								<p>통화하기</p>
+								<a class="copyText">01082296642</a>
+							</div>
+							<div class="email button pointer">
+								<img src="img/kakao_email.svg" alt="" />
+								<p>메일전송</p>
+								<a class="copyText">wjdehdals145@naver.com</a>
+							</div>
+						</div>
+						<div class="line2"></div>
+					</div>
+				</div>
+				<div class="born">
+					<div>BORN</div>
+					<div>
+						IN
+						<p><span>↓</span></p>
+					</div>
+					<div>1993.</div>
+					<div>01. 29. (FRI)</div>
+				</div>
+			</div>
+		</main>
+		<main class="skills parallax__item" data-bgcolor="#ffc700" id="section2">
+			<div class="skills_wrap">
+				<div class="skills_title">
+					<div class="title">SKILLS</div>
+					<div class="text">
+						퍼블리싱과 UIUX 만이 아니라<br />
+						사람들과의 협업과 <br />
+						소통에 중점을 둔 기술 스택.
+					</div>
+				</div>
+				<div class="skills_box">
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front">
+									<img src="img/skills_box1.svg" alt="" />
+								</div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="100">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front">
+									<img src="img/skills_box2.svg" alt="" />
+								</div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="600">
+						<div class="flip_box">
+							<div class="flip empty">
+								<div class="front"></div>
+								<div class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="600">
+						<div class="flip_box">
+							<div class="flip empty">
+								<div class="front"></div>
+								<div class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="600">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front">
+									<img src="img/skills_box3.svg" alt="" />
+								</div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front">
+									<img src="img/skills_box4.svg" alt="" />
+								</div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip empty white">
+								<div class="front"></div>
+								<div class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front">
+									<img src="img/skills_box5.svg" alt="" />
+								</div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip empty">
+								<div class="front"></div>
+								<div class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="600">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front"><img src="img/skills_box6.svg" alt="" /></div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="600">
+						<div class="flip_box">
+							<div class="flip empty">
+								<div class="front"></div>
+								<div class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front"><img src="img/skills_box7.svg" alt="" /></div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip empty">
+								<div class="front"></div>
+								<div class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="600">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front"><img src="img/skills_box8.svg" alt="" /></div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="800" data-aos-delay="300">
+						<div class="flip_box">
+							<div class="flip">
+								<div class="front"><img src="img/skills_box9.svg" alt="" /></div>
+								<div class="back">단단한 뼈대, <br />시멘틱 마크업.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<main class="portfolio parallax__item" data-bgcolor="#fff" id="section3">
+			<div class="portfolio_wrap">
+				<div class="portfolio_title">
+					<div class="title">PORTFOLIO</div>
+					<div class="text">
+						모바일 · 반응형 · 적응형,<br />
+						그리고 인터랙티브 웹까지!<br />
+						다양한 포트폴리오.
+					</div>
+				</div>
+				<div class="portfolio_box">
+					<div class="line1">
+						<div class="nike box">
+							<div class="nike_bg"></div>
+							<div class="nike_bgicon"></div>
+							<div class="content_wrap content_wrapB">
+								<div class="content"><img src="img/portfolio_nike.svg" alt="" /></div>
+								<div class="title content">
+									<div class="name nameb">NIKE KOREA</div>
+									<div class="text textb">NIKE. JUST DO IT.</div>
+								</div>
+								<div class="btn_box">
+									<div class="more"><a href="#">자세히 보기</a></div>
+									<div class="move"><a href="http://ddrnin.store/nike" target="_blank">바로 가기</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="line1_2">
+							<div class="line1_2_1">
+								<div class="rotate box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="428" height="428" fill="none">
+										<path
+											fill="#0D0D0D"
+											d="m277 77-1 2-9 5-1-3 6-3-16-6 1-3 16 6-3-6 3-1 4 9ZM306 95l-1 2-10 2-1-3 7-1-14-10 1-2 15 10-2-7 3-1 2 10ZM311 107l2 4c2 2 4 1 4 0l9-9 3 3-9 9c-1 1-5 4-9 0-2-2-3-5-3-7h3ZM336 112l2 3-8 5c-3 3-4 6-2 9 3 4 6 4 10 2l7-6 2 3-7 5c-5 4-10 4-14-2-4-5-2-10 2-13l8-6ZM353 137l1 3-7 17 12-6 2 3-17 8-2-3 8-16-13 5-1-3 17-8ZM358 176l3 10-3 1c-5 0-8-3-10-8-1-7 2-11 7-13 6-1 11 2 13 8 1 5-1 9-5 11v-3c2-2 3-4 2-7-2-5-5-6-9-5s-6 3-5 8c1 3 2 6 6 6l-2-7 3-1ZM363 219h-2l-8-7 3-2 5 4-1-17h3l1 17 4-5 3 2-8 8ZM369 244c-1 4-5 7-11 5-6-1-8-5-8-8l3-13 18 3-2 13Zm-14-12-2 8c0 3 2 5 6 6s7-1 7-3l1-9-12-2ZM346 264c-1 4 0 7 4 9 4 1 7 0 9-4 2-5 0-8-4-9-4-2-7-1-9 4Zm10-7c6 2 8 7 6 13s-8 8-13 6-8-7-5-13c2-6 7-8 12-6ZM353 288l-2 3-18 3 12 7-2 3-16-10 2-3 18-2-12-8 2-3 16 10ZM323 314l-6 8-3-2c-3-5-1-9 2-13 5-5 10-4 14-1 4 4 5 10 1 14-4 5-8 6-12 3l2-2c3 1 5 0 7-3 4-3 3-6 0-9s-6-3-10 0c-2 3-3 5-1 8l4-5 2 2ZM291 341l-1-1 1-11 3 1-1 7 14-10 2 2-14 10 6 1v3l-10-2ZM281 356l-11-7-3 13-3 1-7-17 3-1 5 12 2-11 4-1 8 6-5-12 3-1 8 17-4 1ZM253 366l-3 1-5-18 4-1 4 18ZM239 369l-3 1-13-13 1 14h-3l-2-18 3-1 13 13-1-14h3l2 18ZM187 360v-2l8-6 2 2-5 4 17 2v3l-18-2 5 6-3 2-6-9ZM154 350l1-2 9-4 1 3-6 3 17 5-1 3-17-6 3 6-3 2-4-10ZM140 332l5 3-5 19-3-2 4-16-7 5-2 8-3-2 4-16v-1l-13 11-4-2 16-13 5 3-1 6 4-3ZM109 332l-13-12 3-3 10 11 3-4-10-10 2-2 11 10 3-3-11-11 2-2 13 13-13 13ZM83 302c-2-3-1-6 1-7l4-2 2-4c3-2 6-1 8 2l7 10-15 11-7-10Zm18-2-5-7c-1-2-3-2-4-1s-1 2 1 5l4 6 4-3Zm-7 4-4-5c-1-2-2-3-4-2v4l4 6 4-3ZM73 263l2-1 9 4-1 3-6-3 7 16-3 2-7-16-2 6-3-1 4-10ZM58 242c-1-4 1-6 5-6 3-1 6 0 6 3l2 10 8-2v4l-7 1-11 3-3-13Zm10 8-1-8c-1-3-2-4-4-3l-2 4 2 8 5-1ZM72 217c0-5-3-7-7-6-4 0-7 2-7 7 0 4 3 6 7 6s7-2 7-7Zm-7 11c-5 0-10-4-10-10 0-7 4-11 10-11 5 0 10 4 10 10 0 7-4 11-10 11ZM58 184c1-3 3-5 7-4l4 2h9l-1 3c-5-1-7 0-8 4l-1 7 7 1v3l-19-3 2-13Zm7 11 1-8c1-2 0-3-2-4-2 0-3 1-3 3l-1 8 5 1ZM68 152l2 1-2 7 15 5-1 3-15-5-3 7-2-1 6-17ZM71 143l9-15 3 1-7 13 4 2 7-12 3 2-7 12 7 4-2 3-17-10ZM104 122c3-3 3-7-1-9-3-3-6-3-9 1-3 3-3 7 1 9 3 3 6 3 9-1Zm-12 4c-4-3-5-9-1-14 5-5 10-5 15-2 4 4 5 9 1 14-5 6-10 5-15 2ZM106 97l2-2 10 12 12-9 2 2-14 12-12-15ZM127 81l3-2 10 16-2 1-11-15ZM155 84c4-2 5-5 3-9s-5-5-9-3c-4 1-5 5-4 9 2 3 5 5 10 3Zm-13-2c-2-5 0-11 6-13 6-3 11 0 13 4 2 5 1 11-5 14-6 2-11 0-14-5ZM192 65v2l-5 9-3-2 4-5-17 3-1-3 17-3-5-4 1-3 9 6ZM226 64v2l-7 8-2-3 5-5h-18v-3h18l-5-4 2-3 7 8Z"
+										/>
+									</svg>
+								</div>
+								<div class="line1_2_2">
+									<div class="watcha box">
+										<div class="content_wrap content_wrapS">
+											<div><img src="img/portfolio_watcha.svg" alt="" /></div>
+											<div class="name">WATCHA</div>
+											<div class="text">더 다양한 세상을 만들어갑니다.</div>
+											<div class="btn_box btn_boxs">
+												<div class="more"><a href="#">자세히 보기</a></div>
+												<div class="move">
+													<a href="http://ddrnin.store/watcha" target="_blank">바로 가기</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div></div>
+						</div>
+					</div>
+					<div class="line2 lotte_T">
+						<div class="lotte box">
+							<div class="content_wrap content_wrapS">
+								<img src="img/portfolio_lotte.svg" alt="" />
+								<div class="name">LOTTE SHOPPING</div>
+								<div class="text">ENJOY YOUR TIME.</div>
+								<div class="btn_box btn_boxs">
+									<div class="more"><a href="#">자세히 보기</a></div>
+									<div class="move">
+										<a href="http://ddrnin.store/lotteshopping" target="_blank">바로 가기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="line3">
+						<div class="line3_0">
+							<div class="line3_1">
+								<div class="dasoni box">
+									<div class="content_wrap content_wrapS">
+										<img src="img/portfolio_dasoni.svg" alt="" />
+										<div class="name">DASONI</div>
+										<div class="text">정신건강의 형평성을 이루다.</div>
+										<div class="btn_box btn_boxs">
+											<div class="more"><a href="#">자세히 보기</a></div>
+											<div class="move">
+												<a href="http://ddrnin.store/dasoni" target="_blank">바로 가기</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="line3_2">
+								<div class="halo box">
+									<div class="content_wrap content_wrapS">
+										<img src="img/portfolio_halo.svg" alt="" />
+										<div class="name">HALO SHOP</div>
+										<div class="text">우리가 사랑한 패션의 모든 것.</div>
+										<div class="btn_box btn_boxs">
+											<div class="more"><a href="#">자세히 보기</a></div>
+											<div class="move">
+												<a href="http://ddrnin.store/haloshop" target="_blank">바로 가기</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="samcheop box">
+							<div class="samcheop_bg"></div>
+							<div class="content_wrap content_wrapB">
+								<img src="img/portfolio_samcheop.svg" alt="" />
+								<div class="name nameb">SAMCHEOP</div>
+								<div class="text textb">떡볶이의 새로운 기준.</div>
+								<div class="btn_box">
+									<div class="more"><a href="#">자세히 보기</a></div>
+									<div class="move">
+										<a href="http://ddrnin.store/samcheop/i" target="_blank">바로 가기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="line4">
+						<div class="design box">
+							<div class="design_bg"></div>
+							<div class="design_bgicon"></div>
+							<div class="content_wrap content_wrapS">
+								<img src="img/portfolio_design.svg" alt="" class="content" />
+								<div class="name content">DESIGN</div>
+								<div class="text content">외주 디자인 프로젝트 및 수상작품.</div>
+								<div class="btn_box btn_boxl">
+									<div class="more"><a href="#">자세히 보기</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<main class="contact parallax__item" data-bgcolor="#FF3D00" id="section4">
+			<div class="contact_wrap">
+				<div class="contact_title">
+					<div class="title">CONTACT</div>
+					<div class="text">
+						사용하기 쉬운 UI, <br />
+						기억에 남는 UX,<br />
+						원활한 의사사통과 협업.
+					</div>
+				</div>
+				<div class="lineText">
+					<div>GROWING WEB PUBLISHIRE&nbsp;</div>
+					<div>GROWING WEB PUBLISHIRE&nbsp;</div>
+					<div>GROWING WEB PUBLISHIRE&nbsp;</div>
+					<div>GROWING WEB PUBLISHIRE&nbsp;</div>
+					<div>GROWING WEB PUBLISHIRE&nbsp;</div>
+				</div>
+				<div class="contactBox">
+					<div class="button box">
+						<div class="button_wrap email button pointer">
+							<img src="img/email.svg" alt="" />
+							<p>Contact for Email?</p>
+							<div>
+								wjdehdals145<br />
+								@naver.com
+							</div>
+							<a class="copyText">wjdehdals145@naver.com</a>
+						</div>
+					</div>
+					<div class="number box">
+						<div class="button_wrap number call button pointer">
+							<img src="img/number.svg" alt="" />
+							<p>Mobile Number</p>
+							<div>+82 10 8229 6642</div>
+							<a class="copyText">01082296642</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="ft1">
+				<div class="footer_wrap">
+					<svg xmlns="http://www.w3.org/2000/svg" width="131" height="50" fill="none">
+						<path
+							fill="#fff"
+							d="M24 10v30h-5v-3c-2 2-5 3-9 3-9 0-10-8-10-11 0-4 1-12 10-12 4 0 7 2 9 4V10h5ZM5 29c0 5 2 6 6 7 2 1 5 0 6-3l1-4-1-5c-1-2-4-3-6-3-4 0-6 3-6 8ZM50 10v30h-5v-3c-2 2-5 3-8 3-9 0-10-8-10-11 0-4 1-12 10-12 3 0 6 2 8 4V10h5ZM32 29c0 5 2 6 5 7s5 0 7-3l1-4-1-5c-1-2-4-3-7-3s-5 3-5 8ZM53 14h5v3c2-2 4-3 8-3h3l-1 4c-3-1-7 1-8 3l-2 4v11h-5V14ZM73 14h5v3c1-2 4-3 8-3 8 0 9 6 9 9v13h-5V23c0-3-2-4-4-5-4 0-8 2-8 5v13h-5V14ZM99 19h5v21h-5V19Zm-1-6c0-2 1-3 4-3 2 0 3 1 3 3 0 1-1 3-3 3-3 0-4-2-4-3ZM108 14h5v3c2-2 4-3 8-3 9 0 10 6 10 9v13h-5V23c0-3-2-4-5-5-4 0-8 2-8 5v13h-5V14Z"
+						/>
+					</svg>
+					<div class="fttop tbtn pointer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="26" height="29" fill="none" class="arr">
+							<path fill="#fff" d="M11 0h3l12 11-4 3-7-7v22h-4V7l-7 7-4-3L11 0Z" />
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="90" height="30" fill="none">
+							<path
+								fill="#fff"
+								d="M82 1c5 0 7 3 7 8 0 6-2 9-7 9H67v11h-5V1h20ZM67 13h12c4 0 5-1 5-4 0-2-1-4-5-4H67v8ZM44 25c7 0 10-4 10-10 0-7-3-11-10-11S34 8 34 15c0 6 3 10 10 10ZM29 15c0-8 5-15 15-15s15 7 15 15-5 14-15 14-15-6-15-14ZM27 1v5H16v23h-5V6H1V1h26Z"
+							/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="ft2">
+				<div class="footer_wrap">
+					<p>Copyright © ddrnin 2024</p>
+					<p>JDM PORTFOLIO</p>
+				</div>
+			</div>
+			<div class="ft3"><div class="footer_wrap"></div></div>
+		</footer>
+		<div class="fixedtbtn tbtn pointer">
+			<img src="img/ftoparr.svg" alt="" /><svg xmlns="http://www.w3.org/2000/svg" width="90" height="30" fill="none">
+				<path
+					fill="#fff"
+					d="M82 1c5 0 7 3 7 8 0 6-2 9-7 9H67v11h-5V1h20ZM67 13h12c4 0 5-1 5-4 0-2-1-4-5-4H67v8ZM44 25c7 0 10-4 10-10 0-7-3-11-10-11S34 8 34 15c0 6 3 10 10 10ZM29 15c0-8 5-15 15-15s15 7 15 15-5 14-15 14-15-6-15-14ZM27 1v5H16v23h-5V6H1V1h26Z"
+				/>
+			</svg>
+		</div>
+	</body>
+	<script>
+		// header fixed
+		$(document).ready(function () {
+			lenis.stop();
+			setTimeout(function () {
+				lenis.start();
+			}, 2200);
+		});
+		$(document).ready(function () {
+			const headerFixed = $('.hd_fixed');
+			let lastScrollTop = 0;
+
+			$(window).scroll(function (event) {
+				let st = $(this).scrollTop();
+				if (st > lastScrollTop) {
+					// 아래쪽으로 스크롤할 때
+					// headerFixed.removeClass('fixed');
+					headerFixed.addClass('fixed');
+					headerFixed.removeClass('fixed2');
+				} else {
+					// 위쪽으로 스크롤할 때
+					headerFixed.addClass('fixed');
+					headerFixed.removeClass('fixed2');
+				}
+				if (st < 80) {
+					headerFixed.removeClass('fixed');
+					headerFixed.removeClass('fixed2');
+				}
+				lastScrollTop = st;
+			});
+		});
+		//  header menu
+		var scrollPosition = 0;
+		$('.menuBtn').click(function () {
+			if ($('.menuBg').hasClass('view')) {
+				$('.menuBg').removeClass('view');
+				$('.menuBtn').removeClass('view');
+				$('.hd_fixed').removeClass('fixed2');
+				lenis.start();
+			} else {
+				$('.menuBg').addClass('view');
+				$('.menuBtn').addClass('view');
+				$('.hd_fixed').addClass('fixed2');
+				// lenis를 멈추면 스크롤 막을 수 있다
+				lenis.stop();
+			}
+			// if ($('.parallax__item.about').hasClass('active')) {
+			// 	$('.menu_header_contentsBox .menu_about').addClass('active');
+			// } else {
+			// 	$('.menu_header_contentsBox .menu_about').removeClass('active');
+			// }
+		});
+		$('.menuMove').click(function () {
+			if ($('.menuBg').hasClass('view')) {
+				$('.menuBg').removeClass('view');
+				$('.menuBtn').removeClass('view');
+				// $('.hd_fixed').removeClass('fixed2');
+				lenis.start();
+			}
+		});
+
+		// header 날짜
+		const updateDateAndTime = () => {
+			const date = new Date();
+			const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+			const dayOfWeek = days[date.getDay()];
+			const year = date.getFullYear().toString().slice(-2);
+			const month = ('0' + (date.getMonth() + 1)).slice(-2);
+			const day = ('0' + date.getDate()).slice(-2);
+			const today = `${year}. ${month}. ${day}. ${dayOfWeek}`;
+			$('.date .datep').text(today);
+			// 시간
+			var today1 = new Date();
+			var hours = ('0' + today1.getHours()).slice(-2);
+			var minutes = ('0' + today1.getMinutes()).slice(-2);
+
+			var timeString = hours + ':' + minutes;
+			$('.time').text(timeString);
+			$('.date .datet').text(timeString);
+		};
+		// main1 슬라이더
+		var swiper = new Swiper('.slider1', {
+			loop: true,
+			loopedSlides: 1,
+			slidesPerView: 2, // 한 번에 보이는 슬라이드 개수
+			slidesPerColumn: 2, // 슬라이드를 열 당 1개씩만 표시하도록 설정
+			spaceBetween: 20,
+			// autoplay: {
+			// 	delay: 2000,
+			// 	disableOnInteraction: false,
+			// },
+			loopAdditionalSlides: 3, // 뒤에 3칸 먼저 복사되도록 설정
+		});
+		// 메뉴 이동
+		let links = gsap.utils.toArray('.menuMove');
+		links.forEach(link => {
+			let element = document.querySelector(link.getAttribute('href')),
+				linkST = ScrollTrigger.create({
+					trigger: element,
+					start: 'top top',
+				});
+
+			ScrollTrigger.create({
+				trigger: element,
+				start: 'top center',
+				end: 'bottom center',
+				onToggle: self => setActive(link),
+			});
+
+			link.addEventListener('click', e => {
+				e.preventDefault();
+				gsap.to(window, { duration: 0.6, scrollTo: linkST.start, overwrite: 'auto' });
+			});
+		});
+
+		function setActive(link) {
+			links.forEach(el => el.classList.remove('active'));
+			link.classList.add('active');
+		}
+		// main2 gsap
+		const mainWrap = $('.main2_wrap');
+		gsap.to(mainWrap, {
+			scrollTrigger: {
+				trigger: '.main2',
+				start: 'top 70%',
+				end: '+=100%',
+				scrub: true,
+				// markers: true,
+			},
+			width: '100%',
+		});
+		// about linetext
+		const alineText = $('.alineText');
+		gsap.to(alineText, {
+			scrollTrigger: {
+				trigger: '.kakao',
+				start: '25% 70%',
+				end: '+=130%',
+				scrub: true,
+				// markers: true,
+			},
+			x: '-40%',
+		});
+		// about kakao box aos
+		const kakao = $('.kakao');
+		const box = $('.kakao_aos');
+		gsap.to(box, {
+			opacity: 1,
+			y: 0,
+			stagger: 0.1,
+			duration: 1,
+			ease: 'power1.out',
+			scrollTrigger: {
+				trigger: kakao,
+				toggleActions: 'play reset play reset',
+				start: 'top 80%',
+				end: '120% 80%',
+				// markers: true,
+			},
+		});
+		// about 전화번호 이메일 복사
+
+		function copyClipboard(event) {
+			let text;
+			if ($(event.currentTarget).hasClass('call')) {
+				text = $(event.currentTarget).find('.copyText').text(); // call 버튼 클릭 시 특정 동작
+				alert('전화번호가 복사되었습니다.');
+			} else if ($(event.currentTarget).hasClass('email')) {
+				text = $(event.currentTarget).find('.copyText').text(); // email 버튼 클릭 시 특정 동작
+				alert('이메일이 복사되었습니다.');
+			}
+
+			const textarea = document.createElement('textarea');
+			textarea.value = text;
+			document.body.append(textarea);
+			textarea.select();
+			document.execCommand('copy');
+			textarea.remove();
+		}
+
+		$(document).ready(function () {
+			$('.call.button').on('click', copyClipboard);
+			$('.email.button').on('click', copyClipboard);
+		});
+		//  배경색 변화
+
+		gsap.utils.toArray('.parallax__item').forEach((item, index) => {
+			let color = item.getAttribute('data-bgcolor');
+			let menuColors = document.querySelectorAll('.menu_color');
+
+			ScrollTrigger.create({
+				trigger: item,
+				start: 'top 45%',
+				end: 'bottom 45%',
+
+				onEnter: () => {
+					gsap.to('body', {
+						backgroundColor: color,
+						duration: 0.4,
+					});
+					menuColors[index - 2].classList.add('active');
+				},
+				onLeave: () => {
+					menuColors[index - 2].classList.remove('active');
+				},
+				onEnterBack: () => {
+					gsap.to('body', {
+						backgroundColor: color,
+						duration: 0.4,
+					});
+					menuColors[index - 2].classList.add('active');
+				},
+				onLeaveBack: () => {
+					menuColors[index - 2].classList.remove('active');
+				},
+			});
+		});
+		// 10초마다 시간 업데이트
+		updateDateAndTime();
+		setInterval(updateDateAndTime, 10000);
+
+		// skills aos
+		AOS.init();
+		// portfolio gsap
+		const nike = $('.nike_bg');
+		gsap.to(nike, {
+			scrollTrigger: {
+				trigger: '.line1',
+				start: '10% 50%',
+				end: '+=35%',
+				scrub: true,
+				// markers: true,
+			},
+			width: '100vh',
+			height: '100vh',
+		});
+		const move = $('.nike .move');
+		gsap.to(move, {
+			scrollTrigger: {
+				trigger: '.line1',
+				start: '35% 50%',
+				end: '+=27%',
+				scrub: true,
+				// markers: true,
+			},
+			color: '#333333',
+		});
+		const watcha = $('.watcha');
+		gsap.to(watcha, {
+			scrollTrigger: {
+				trigger: '.line1_2_2',
+				start: '0% 60%',
+				end: '+=35%',
+				scrub: true,
+				// markers: true,
+			},
+			width: ' calc(50vh - 10px)',
+		});
+		// const samcheop = $('.samcheop');
+		// gsap.to(samcheop, {
+		// 	scrollTrigger: {
+		// 		trigger: '.line3',
+		// 		start: 'top 70%',
+		// 		end: '+=60%',
+		// 		scrub: true,
+		// 		// markers: true,
+		// 	},
+		// 	width: '100vh',
+		// 	height: '100vh',
+		// });
+
+		const lotte = $('.lotte');
+		gsap.to(lotte, {
+			scrollTrigger: {
+				trigger: '.lotte_T',
+				start: 'top 70%',
+				end: '+=65%',
+				scrub: true,
+				// markers: true,
+			},
+			width: '100vh',
+		});
+
+		const halo = $('.halo');
+		gsap.to(halo, {
+			scrollTrigger: {
+				trigger: '.line3_2',
+				start: 'top 60%',
+				end: '+=60%',
+				scrub: true,
+				// markers: true,
+			},
+			width: '100vh',
+		});
+		const design = $('.design_bg');
+		gsap.to(design, {
+			scrollTrigger: {
+				trigger: '.line4',
+				start: 'top 50%',
+				end: '+=70%',
+				scrub: true,
+				// markers: true,
+			},
+			height: '1000px',
+		});
+		// top버튼
+		const tbtns = document.querySelectorAll('.tbtn');
+		tbtns.forEach(function (tbtn) {
+			tbtn.addEventListener('click', function () {
+				gsap.to(window, 1.5, {
+					scrollTo: 0,
+				});
+			});
+		});
+		// top버튼 맨위에서 숨기기
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 1000) {
+				$('.tbtn').addClass('show');
+			} else {
+				$('.tbtn').removeClass('show');
+			}
+		});
+
+		// 스크롤 스무스
+		const lenis = new Lenis();
+
+		lenis.on('scroll', e => {
+			console.log(e);
+		});
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+		requestAnimationFrame(raf);
+
+		// 커스텀 마우스
+		document.addEventListener('mousemove', function (e) {
+			const cursor = document.querySelector('.custom-cursor');
+			cursor.style.left = e.clientX + 'px'; // 사용자의 마우스 위치를 기반으로 수정
+			cursor.style.top = e.clientY + 'px'; // 사용자의 마우스 위치를 기반으로 수정
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const pointerElements = document.querySelectorAll('.pointer, a');
+			const customCursor = document.querySelector('.custom-cursor');
+
+			pointerElements.forEach(function (element) {
+				element.addEventListener('mouseenter', function () {
+					customCursor.style.transition = 'transform 0.3s';
+					customCursor.style.transform = 'scale(1.7)';
+					customCursor.style.borderRadius = '14px';
+				});
+
+				element.addEventListener('mouseleave', function () {
+					customCursor.style.transition = 'transform 0.3s';
+					customCursor.style.transform = 'scale(1)';
+					customCursor.style.borderRadius = '50%';
+				});
+			});
+		});
+	</script>
+</html>
