@@ -445,22 +445,22 @@ header {
 				}
 				&:hover {
 					&:nth-child(1) {
-						p {
+						h2 {
 							color: #0038ff;
 						}
 					}
 					&:nth-child(2) {
-						p {
+						h2 {
 							color: #ffc700;
 						}
 					}
 					&:nth-child(3) {
-						p {
+						h2 {
 							color: #fff;
 						}
 					}
 					&:nth-child(4) {
-						p {
+						h2 {
 							color: #ff3d00;
 						}
 					}
@@ -506,14 +506,14 @@ header {
 						transition: 0.25s;
 						transform: translate(-60px, -4px);
 					}
-					p {
+					h2 {
 						transition: 0.25s linear;
 					}
 					&:hover {
 						span {
 							transform: translate(0px, -4px);
 						}
-						p {
+						h2 {
 							transform: translateX(60px);
 						}
 					}
@@ -540,12 +540,12 @@ header {
 				}
 				.button_wrap {
 					text-align: left;
-					p {
+					h2 {
 						@include main_font(33.75px);
 						color: #fff;
 						margin-bottom: 12px;
 					}
-					div {
+					p {
 						@include text_font6(28.5px);
 						color: rgba($color: #fff, $alpha: 0.5);
 					}
@@ -664,7 +664,7 @@ header {
 								margin-bottom: 4px;
 							}
 						}
-						p {
+						h2 {
 							transition: 0.25s linear;
 						}
 					}
@@ -703,7 +703,7 @@ header {
 						span {
 							transform: translateX(0%);
 						}
-						p {
+						h2 {
 							transform: translateX(30px);
 						}
 					}
@@ -949,7 +949,7 @@ header {
 						color: #fff;
 						font-size: 24px;
 						margin-bottom: 21px;
-						div {
+						h3 {
 							padding: 16px 16px 20px;
 							border-radius: 40px;
 							transition: 0.15s ease-in;
@@ -958,29 +958,29 @@ header {
 							transform: translate3d(0px, 500px, 0px);
 						}
 						&:hover {
-							div {
+							h3 {
 								transform: rotate(-10deg);
 							}
 						}
 						&:first-child {
-							div {
+							h3 {
 								margin-right: 18px;
 								background: #ff3d00;
 							}
 						}
 						&:nth-child(2) {
-							div {
+							h3 {
 								background: #ffc700;
 							}
 						}
 						&:nth-child(3) {
-							div {
+							h3 {
 								background: rgba($color: #fff, $alpha: 0.3);
 								border: 2px solid #fff;
 							}
 						}
 						&:nth-child(4) {
-							div {
+							h3 {
 								background: #000;
 							}
 						}
@@ -989,7 +989,7 @@ header {
 						display: flex;
 						li {
 							&:nth-child(2) {
-								div {
+								h3 {
 									background: #0038ff;
 								}
 							}
@@ -1067,7 +1067,7 @@ header {
 			width: 1020px;
 			margin: 0 auto;
 			margin-top: 80px;
-			div {
+			h3 {
 				@include main_font(188px);
 				color: #fff;
 				text-align: left;
@@ -1228,7 +1228,7 @@ header {
 				display: flex;
 				align-items: center;
 				gap: 10px;
-				span {
+				p {
 					@include text_font5(24px);
 				}
 			}
@@ -1297,6 +1297,7 @@ header {
 			margin-bottom: 0;
 			.site {
 				position: relative;
+				width: 50%;
 				img {
 					width: 100%;
 				}
@@ -1305,7 +1306,7 @@ header {
 					top: 0;
 					left: 0;
 					transform: translateX(-100%);
-					div {
+					button {
 						width: 30px;
 						height: 90px;
 						border-radius: 0 20px 0 0;
@@ -1341,7 +1342,7 @@ header {
 				}
 			}
 			.contactBox {
-				width: 100%;
+				width: 50%;
 				word-break: all;
 				white-space: normal;
 				.contactBox_wrap {
@@ -1357,7 +1358,7 @@ header {
 					> .title {
 						margin-bottom: 50px;
 						@include text_font6(52px);
-						div {
+						h2 {
 							margin-bottom: 10px;
 						}
 					}
@@ -1372,15 +1373,13 @@ header {
 							li {
 								display: flex;
 								align-items: flex-end;
-								div {
-									&:first-child {
-										@include text_font7(20px);
-										width: 80px;
-									}
-									&:last-child {
-										@include text_font4(16px);
-										margin-left: 18px;
-									}
+								h4 {
+									@include text_font7(20px);
+									width: 100px;
+								}
+								p {
+									@include text_font4(16px);
+									margin-left: 18px;
 								}
 							}
 						}
@@ -1524,12 +1523,13 @@ header {
 							.btn_wrap {
 								display: flex;
 								gap: 10px;
-								div {
+								button {
 									width: 92px;
 									height: 36px;
 									border-radius: 50px;
 									border: 1px solid #fff;
-									font-size: 13px;
+									@include text_font6(13px);
+									cursor: none;
 									&.modal_btn {
 										color: #fff;
 										background: rgba($color: #fff, $alpha: 0.1);
@@ -1663,27 +1663,6 @@ header {
 										}
 									}
 								}
-								// &.halo {
-								// 	.cube__face {
-								// 		&.right,
-								// 		&.left {
-								// 			background: #0a0a0a;
-								// 		}
-								// 		&.bottom,
-								// 		&.top {
-								// 			background: #0a0a0a;
-								// 			&::after {
-								// 				content: '';
-								// 				position: absolute;
-								// 				top: 0;
-								// 				left: 0;
-								// 				width: 100%;
-								// 				height: 100%;
-								// 				background: rgba($color: #fff, $alpha: 0.2);
-								// 			}
-								// 		}
-								// 	}
-								// }
 								&.dasoni {
 									.cube__face {
 										&.right,
@@ -1853,14 +1832,14 @@ header {
 					transform: translate3d(var(--move-final), 0, 0);
 				}
 			}
-			div {
+			p {
 				white-space: nowrap;
 			}
 		}
 		.contactBox {
 			width: 1020px;
 			height: 500px;
-			margin: 200px auto 0;
+			margin: 150px auto 0;
 			display: flex;
 			justify-content: center;
 			gap: 20px;
@@ -1873,7 +1852,7 @@ header {
 					margin: 129px 60px 0;
 					width: 380px;
 					max-height: 250px;
-					div {
+					p {
 						margin: 20px 0;
 						@include text_font(38px);
 						color: rgba($color: #fff, $alpha: 0.5);
@@ -1885,7 +1864,7 @@ header {
 					}
 				}
 			}
-			p {
+			h2 {
 				@include main_font(45px);
 				color: #fff;
 			}

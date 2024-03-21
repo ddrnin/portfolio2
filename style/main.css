@@ -457,16 +457,16 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
 .menuBg .menu_header_contentsBox ul li.active:nth-child(4) {
   color: #ff3d00;
 }
-.menuBg .menu_header_contentsBox ul li:hover:nth-child(1) p {
+.menuBg .menu_header_contentsBox ul li:hover:nth-child(1) h2 {
   color: #0038ff;
 }
-.menuBg .menu_header_contentsBox ul li:hover:nth-child(2) p {
+.menuBg .menu_header_contentsBox ul li:hover:nth-child(2) h2 {
   color: #ffc700;
 }
-.menuBg .menu_header_contentsBox ul li:hover:nth-child(3) p {
+.menuBg .menu_header_contentsBox ul li:hover:nth-child(3) h2 {
   color: #fff;
 }
-.menuBg .menu_header_contentsBox ul li:hover:nth-child(4) p {
+.menuBg .menu_header_contentsBox ul li:hover:nth-child(4) h2 {
   color: #ff3d00;
 }
 .menuBg .menu_header_contentsBox ul li:nth-child(1) a {
@@ -503,13 +503,13 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   transition: 0.25s;
   transform: translate(-60px, -4px);
 }
-.menuBg .menu_header_contentsBox ul li a p {
+.menuBg .menu_header_contentsBox ul li a h2 {
   transition: 0.25s linear;
 }
 .menuBg .menu_header_contentsBox ul li a:hover span {
   transform: translate(0px, -4px);
 }
-.menuBg .menu_header_contentsBox ul li a:hover p {
+.menuBg .menu_header_contentsBox ul li a:hover h2 {
   transform: translateX(60px);
 }
 .menuBg .menu_header_contentsBox .contactBox {
@@ -535,13 +535,13 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
 .menuBg .menu_header_contentsBox .contactBox .box .button_wrap {
   text-align: left;
 }
-.menuBg .menu_header_contentsBox .contactBox .box .button_wrap p {
+.menuBg .menu_header_contentsBox .contactBox .box .button_wrap h2 {
   font-family: "neurimboGothicRegular";
   font-size: 33.75px;
   color: #fff;
   margin-bottom: 12px;
 }
-.menuBg .menu_header_contentsBox .contactBox .box .button_wrap div {
+.menuBg .menu_header_contentsBox .contactBox .box .button_wrap p {
   font-family: "Pretendard-SemiBold";
   font-size: 28.5px;
   color: rgba(255, 255, 255, 0.5);
@@ -713,7 +713,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
 .main1 .main1_wrap .slider1 .swiper-slide .text_wrap .title span svg {
   margin-bottom: 4px;
 }
-.main1 .main1_wrap .slider1 .swiper-slide .text_wrap .title p {
+.main1 .main1_wrap .slider1 .swiper-slide .text_wrap .title h2 {
   transition: 0.25s linear;
 }
 .main1 .main1_wrap .slider1 .swiper-slide .text_wrap .text {
@@ -751,7 +751,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
 .main1 .main1_wrap .slider1 .swiper-slide:hover .title span {
   transform: translateX(0%);
 }
-.main1 .main1_wrap .slider1 .swiper-slide:hover .title p {
+.main1 .main1_wrap .slider1 .swiper-slide:hover .title h2 {
   transform: translateX(30px);
 }
 
@@ -1060,7 +1060,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   font-size: 24px;
   margin-bottom: 21px;
 }
-.about .about_wrap .kakao .kakao_wrap .hash li div {
+.about .about_wrap .kakao .kakao_wrap .hash li h3 {
   padding: 16px 16px 20px;
   border-radius: 40px;
   transition: 0.15s ease-in;
@@ -1068,27 +1068,27 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
 .about .about_wrap .kakao .kakao_wrap .hash li.kakao_aos {
   transform: translate3d(0px, 500px, 0px);
 }
-.about .about_wrap .kakao .kakao_wrap .hash li:hover div {
+.about .about_wrap .kakao .kakao_wrap .hash li:hover h3 {
   transform: rotate(-10deg);
 }
-.about .about_wrap .kakao .kakao_wrap .hash li:first-child div {
+.about .about_wrap .kakao .kakao_wrap .hash li:first-child h3 {
   margin-right: 18px;
   background: #ff3d00;
 }
-.about .about_wrap .kakao .kakao_wrap .hash li:nth-child(2) div {
+.about .about_wrap .kakao .kakao_wrap .hash li:nth-child(2) h3 {
   background: #ffc700;
 }
-.about .about_wrap .kakao .kakao_wrap .hash li:nth-child(3) div {
+.about .about_wrap .kakao .kakao_wrap .hash li:nth-child(3) h3 {
   background: rgba(255, 255, 255, 0.3);
   border: 2px solid #fff;
 }
-.about .about_wrap .kakao .kakao_wrap .hash li:nth-child(4) div {
+.about .about_wrap .kakao .kakao_wrap .hash li:nth-child(4) h3 {
   background: #000;
 }
 .about .about_wrap .kakao .kakao_wrap .hash .hash2 {
   display: flex;
 }
-.about .about_wrap .kakao .kakao_wrap .hash .hash2 li:nth-child(2) div {
+.about .about_wrap .kakao .kakao_wrap .hash .hash2 li:nth-child(2) h3 {
   background: #0038ff;
 }
 .about .about_wrap .kakao .kakao_wrap .img {
@@ -1158,7 +1158,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   margin: 0 auto;
   margin-top: 80px;
 }
-.about .about_wrap .born div {
+.about .about_wrap .born h3 {
   font-family: "neurimboGothicRegular";
   font-size: 188px;
   color: #fff;
@@ -1166,12 +1166,12 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   display: flex;
   align-items: flex-end;
 }
-.about .about_wrap .born div p {
+.about .about_wrap .born h3 p {
   display: inline-block;
   line-height: 0.65;
   overflow: hidden;
 }
-.about .about_wrap .born div p span {
+.about .about_wrap .born h3 p span {
   display: inline-block;
   transform: translateY(-100%);
   animation: arr 1.2s ease infinite forwards;
@@ -1335,7 +1335,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   align-items: center;
   gap: 10px;
 }
-.modal .modal_header .modal_header_wrap .logo span {
+.modal .modal_header .modal_header_wrap .logo p {
   font-family: "Pretendard-Light";
   font-size: 24px;
 }
@@ -1405,6 +1405,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
 }
 .modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site {
   position: relative;
+  width: 50%;
 }
 .modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site img {
   width: 100%;
@@ -1415,7 +1416,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   left: 0;
   transform: translateX(-100%);
 }
-.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site .toggle div {
+.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site .toggle button {
   width: 30px;
   height: 90px;
   border-radius: 0 20px 0 0;
@@ -1430,10 +1431,10 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   align-items: center;
   justify-content: center;
 }
-.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site .toggle div.checked.main_btn {
+.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site .toggle button.checked.main_btn {
   border: none;
 }
-.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site .toggle div.checked.sub_btn {
+.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site .toggle button.checked.sub_btn {
   border: none;
 }
 .modal .modal_header_contentsBox .modal_header_contentsBox_wrap .site img {
@@ -1446,7 +1447,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   display: block;
 }
 .modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox {
-  width: 100%;
+  width: 50%;
   word-break: all;
   white-space: normal;
 }
@@ -1466,7 +1467,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   font-family: "Pretendard-SemiBold";
   font-size: 52px;
 }
-.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap > .title div {
+.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap > .title h2 {
   margin-bottom: 10px;
 }
 .modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap .info {
@@ -1483,12 +1484,12 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   display: flex;
   align-items: flex-end;
 }
-.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap .info .text li div:first-child {
+.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap .info .text li h4 {
   font-family: "Pretendard-Bold";
   font-size: 20px;
-  width: 80px;
+  width: 100px;
 }
-.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap .info .text li div:last-child {
+.modal .modal_header_contentsBox .modal_header_contentsBox_wrap .contactBox .contactBox_wrap .info .text li p {
   font-family: "Pretendard-Regular";
   font-size: 16px;
   margin-left: 18px;
@@ -1624,24 +1625,26 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   display: flex;
   gap: 10px;
 }
-.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap div {
+.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap button {
   width: 92px;
   height: 36px;
   border-radius: 50px;
   border: 1px solid #fff;
+  font-family: "Pretendard-SemiBold";
   font-size: 13px;
+  cursor: none;
 }
-.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap div.modal_btn {
+.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap button.modal_btn {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap div.move_btn {
+.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap button.move_btn {
   background: #fff;
 }
-.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap div.move_btn a {
+.portfolio .portfolio_wrap .portfolio_box .line .line_box .box_wrap .box_left .btn_wrap button.move_btn a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1893,13 +1896,13 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
     transform: translate3d(var(--move-final), 0, 0);
   }
 }
-.contact .contact_wrap .lineText div {
+.contact .contact_wrap .lineText p {
   white-space: nowrap;
 }
 .contact .contact_wrap .contactBox {
   width: 1020px;
   height: 500px;
-  margin: 200px auto 0;
+  margin: 150px auto 0;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -1915,7 +1918,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   width: 380px;
   max-height: 250px;
 }
-.contact .contact_wrap .contactBox .box .button_wrap div {
+.contact .contact_wrap .contactBox .box .button_wrap p {
   margin: 20px 0;
   font-family: "Pretendard-Medium";
   font-size: 38px;
@@ -1926,7 +1929,7 @@ header .header_wrap .hd_right .menuBtn.view span:last-child {
   width: 64px;
   height: 74px;
 }
-.contact .contact_wrap .contactBox p {
+.contact .contact_wrap .contactBox h2 {
   font-family: "neurimboGothicRegular";
   font-size: 45px;
   color: #fff;

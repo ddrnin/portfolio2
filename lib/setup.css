@@ -19,7 +19,11 @@ ol li {
 	display: inline-block;
 	font-size: inherit;
 }
-span {
+span,
+h1,
+h2,
+h3,
+h4 {
 	font-size: inherit;
 	font-weight: inherit;
 }
